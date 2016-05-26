@@ -34,10 +34,10 @@ type Champion struct {
 		Name string `json:"name"`
 		Num  int    `json:"num"`
 	} `json:"skins"`
-	Spells []struct{} `json:"spells"`
-	Stats  champStats `json:"stats"`
-	Tags   []string   `json:"tags"`
-	Title  string     `json:"title"`
+	Spells []spellsData `json:"spells"`
+	Stats  champStats   `json:"stats"`
+	Tags   []string     `json:"tags"`
+	Title  string       `json:"title"`
 }
 
 type champStats struct {
